@@ -24,6 +24,8 @@
 (def dev-mode?
   (boolean (env :dev-mode false)))
 
+(defn boop [] "boop")
+
 (defn healthcheck
   []
   (let [body {:name "exploded"
